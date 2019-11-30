@@ -1,0 +1,6 @@
+/.vagrant/
+*.box
+/fix.*
+/output-vagrant/
+/packer_cache/
+

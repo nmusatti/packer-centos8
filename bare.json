@@ -1,0 +1,5 @@
+{
+  "box_name": "centos8-bare",
+  "disk_size": "16384",
+  "guest_additions": "disable"
+}
