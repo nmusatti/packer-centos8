@@ -5,7 +5,7 @@
       "iso_name": "CentOS-8-x86_64-1905-boot.iso",
       "iso_path": "/sw/centos",
       "iso_url": "https://mirrorlist.centos.org/pub/centos/8.0.1905/isos/x86_64/CentOS-8-x86_64-1905-boot.iso",
-      "kickstart": "kickstart-bare.cfg",
+      "kickstart": "kickstart.cfg",
       "proxy": "{{ env `http_proxy` }}"
   },
   "provisioners": [
