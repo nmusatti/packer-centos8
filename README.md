@@ -14,7 +14,7 @@ Customizable variables may be provided on the command line or by means of variab
 reflects my personal conventions on where to keep local installation images, you may want to provide your own location. This will
 result in a `centos7-bare.box` file being created, which may be installed with the following command:
 
-    vagrant box add -f --name centos7-bare centos7-bare.box
+    vagrant box add -f --name centos8-bare centos8-bare.box
 
 To build the `vbga` base box, replace `bare` with `vbga` in the commands above.
 
