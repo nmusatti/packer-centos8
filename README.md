@@ -12,7 +12,7 @@ The `bare` base box may be built with the following command:
 
 Customizable variables may be provided on the command line or by means of variable files. Note that the `linux.json` var file
 reflects my personal conventions on where to keep local installation images, you may want to provide your own location. This will
-result in a `centos7-bare.box` file being created, which may be installed with the following command:
+result in a `centos8-bare.box` file being created, which may be installed with the following command:
 
     vagrant box add -f --name centos8-bare centos8-bare.box
 
