@@ -8,6 +8,9 @@ This project supports the creation of the following kind of base boxes:
 * gui: A basic GNOME workstation, derived from the `vbga` base box.
 * mate: A basic MATE desktop workstation, derived from the `gui` base box.
 
+Note that, as the MATE desktop is not available from the [EPEL repository](https://fedoraproject.org/wiki/EPEL), it is installed from
+the [Official unofficial repository for MATE for EL8](https://copr.fedorainfracloud.org/coprs/stenstorp/MATE/)
+
 The `bare` base box may be built with the following command:
 
     packer build -var-file linux.json -var-file bare.json centos.json
@@ -25,7 +28,7 @@ you may build the `centos8-gui` box with the following command:
 
 The new box will be stored in the `centos8-gui/package.box` file. It may be installed as follows:
 
-    vagrant box add -f --name centos7-gui centos7-gui/package.box
+    vagrant box add -f --name centos8-gui centos8-gui/package.box
 
 Once the `centos8-gui` box is install you may build the `centos8-mate` one by replacing `mate` for `gui` in the last two commands.
 
