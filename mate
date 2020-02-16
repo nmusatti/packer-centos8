@@ -1,0 +1,3 @@
+rm -rf centos8-mate && \
+  packer.io build centos-mate.json && \
+  vagrant box add -f --name centos8-mate centos8-mate/package.box

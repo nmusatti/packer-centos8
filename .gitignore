@@ -1,6 +1,13 @@
+/build.*
+/*.box
+/centos8-gui/
+/centos8-mate/
+/output-virtualbox-iso/
+/packer_cache/
+/proxy_env.sh
 /.vagrant/
-*.box
 /fix.*
 /output-vagrant/
-/packer_cache/
+*.swp
+*~
 

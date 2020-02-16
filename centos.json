@@ -66,7 +66,9 @@
      "hard_drive_interface": "sata",
      "vboxmanage": [
         [ "modifyvm", "{{.Name}}", "--memory", "1024" ],
-        [ "modifyvm", "{{.Name}}", "--cpus", "2" ]
+        [ "modifyvm", "{{.Name}}", "--cpus", "2" ],
+        [ "modifyvm", "{{.Name}}", "--vram", "128" ],
+        [ "modifyvm", "{{.Name}}", "--graphicscontroller", "vmsvga" ]
       ]
     }
   ],

@@ -1,0 +1,33 @@
+{
+  "description": "Build CentOS 8 x86_64 Mate workstation",
+  "variables": {
+      "proxy": "{{ env `http_proxy` }}"
+  }, 
+  "builders": [
+    {
+      "communicator": "ssh",
+      "source_path": "centos8-gui",
+      "output_dir": "./centos8-mate",
+      "box_name": "centos8-mate",
+      "provider": "virtualbox",
+      "skip_add": true,
+      "type": "vagrant"
+    } 
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "scripts": [
+        "scripts/mate.sh"
+      ],
+      "environment_vars": [
+        "http_proxy={{ user `proxy` }}"
+      ],
+      "override": {
+        "vagrant": {
+          "execute_command": "echo 'vagrant'|sudo -S {{ .Vars }} bash '{{.Path}}'"
+        }
+      }
+    }
+  ]
+}

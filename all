@@ -1,0 +1,5 @@
+DIR=$(dirname $0)
+$DIR/bare && \
+  $DIR/vbga && \
+  $DIR/gui && \
+  $DIR/mate
