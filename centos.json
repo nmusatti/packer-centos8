@@ -17,7 +17,7 @@
         "<wait10><wait10><wait10>"
       ],
       "boot_wait": "10s",
-      "disk_size": 16384,
+      "disk_size": 32768,
       "guest_additions_mode": "{{ user `guest_additions` }}",
       "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
       "guest_os_type": "RedHat_64",
