@@ -1,2 +1,2 @@
-packer.io build -var-file linux.json -var-file vbga.json centos.json && \
+packer build -var-file linux.json -var-file vbga.json centos.json && \
   vagrant box add -f --name centos8-vbga centos8-vbga.box
