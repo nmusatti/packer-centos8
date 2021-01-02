@@ -32,7 +32,7 @@
       "shutdown_command": "echo 'vagrant'| sudo -S /sbin/poweroff",
       "ssh_password": "vagrant",
       "ssh_port": 22,
-      "ssh_timeout": "15m",
+      "ssh_timeout": "30m",
       "ssh_username": "vagrant",
       "type": "virtualbox-iso",
       "vboxmanage": [
