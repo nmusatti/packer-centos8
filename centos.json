@@ -98,8 +98,8 @@
   "variables": {
     "guest_additions": "disable",
     "iso_path": "/sw/centos",
-    "iso_name": "CentOS-8.3.2011-x86_64-boot.iso",
-    "iso_url": "https://mirrorlist.centos.org/pub/centos/8.3.2011/isos/x86_64/CentOS-8.3.2011-x86_64-boot.iso",
+    "iso_name": "CentOS-8.5.2111-x86_64-boot.iso",
+    "iso_url": "http://ftp.tu-chemnitz.de/pub/linux/centos/8.5.2111/isos/x86_64/CentOS-8.5.2111-x86_64-boot.iso",
     "kickstart": "kickstart.cfg",
     "proxy": "{{ env `http_proxy` }}"
   }
